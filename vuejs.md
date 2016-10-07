@@ -15,9 +15,9 @@
 ----
 
 ###如何优雅地使用此文档
-1. 入门先从官网文档入手，粗略过一遍有个影响，力求回查时能找到对应的关键字或位置。
-    - [中文官网](http://cn-stage.vuejs.org/) 
-    - [vuejs](http://cn.vuejs.org/) 
+1. 入门先从官网文档入手，粗略过一遍有个印象，力求回查时能找到对应的关键字或位置。
+    - [vuejs中文官网](http://cn.vuejs.org/) 
+    - [vuejs英文官网](http://vuejs.org/) 
     - [vuejs组织](https://github.com/vuejs)
 2. 发出一个问题之后，不要暂时的离开电脑，如果没有把握先不要提问。
 3. 珍惜每一次提问，感恩每一次反馈，每个人工作还是业余之外抽出的时间有限，充分准备好应有的资源之后再发问，有利于问题能够高效质量地得到解决。尤其是具备解决问题能力的人，通常时间都很宝贵。
@@ -36,6 +36,9 @@
 
 2. 入门类
     - [vue 快速入门](http://segmentfault.com/a/1190000003968020)
+    - [vuex - 入门教程实例1](https://segmentfault.com/a/1190000005018970)
+    - [vuex - 入门教程实例2](https://segmentfault.com/a/1190000005148935)
+    - [vuex - 入门教程实例3](https://segmentfault.com/a/1190000006988584)
 
 3. 英文教程
     - [Learning Vue 1.0: Step By Step](https://laracasts.com/series/learning-vue-step-by-step/)
@@ -53,7 +56,7 @@
 ###二. 文档
 
 - API
-    - [Vue.js - API](http://cn-stage.vuejs.org/api/)
+    - [Vue.js - API](http://cn.vuejs.org/api/)
 - router
     - [vue-router文档](http://router.vuejs.org/zh-cn/index.html)
 
@@ -88,6 +91,8 @@
     - [Vue Admin Panel Framework [WIP] ](https://github.com/fundon/vue-admin)
     - [Vue 的图片轮播组件](https://github.com/qusiba/vue-slider)
     - [基于vue开发的material design ui库](https://github.com/myronliu347/vue-carbon)
+    - [iView：一套基于Vue的高质量UI组件库](http://gold.xitu.io/post/57b535405bbb50006300ffc9)
+
 - 表格
     - [ZEE大神作品 - vue-editable](https://github.com/jinzhe/vue-editable)
 - 分页
@@ -124,8 +129,11 @@
      - [vue-qrcode](https://github.com/xiaokaike/vue-qrcode)
 - 省市联动
     - [Vue 省市区三级联动组件](https://github.com/QingWei-Li/vue-region-picker)
- -TimeLine
-    -[Vue企业级时间轴选择器](https://github.com/yelingfeng/vue-timelinepick)
+- TimeLine
+    - [Vue企业级时间轴选择器](https://github.com/yelingfeng/vue-timelinepick)
+- Template
+    - [vue2.0模板](https://github.com/yelingfeng/vue-ylf-template)
+    - [vue2.0全家桶实例](https://github.com/yelingfeng/vue-2.0-FamilyBucket)
      
 ###四. 示例
 

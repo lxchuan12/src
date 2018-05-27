@@ -92,6 +92,13 @@
     - [Vue 的图片轮播组件](https://github.com/qusiba/vue-slider)
     - [基于vue开发的material design ui库](https://github.com/myronliu347/vue-carbon)
     - [iView：一套基于Vue的高质量UI组件库](http://gold.xitu.io/post/57b535405bbb50006300ffc9)
+    - [iView - 一套基于 Vue.js 的高质量 UI 组件库](https://www.iviewui.com/overview)
+    - [Muse-UI 基于 Vue 2.0 和 Material Desigin 的 UI 组件库](https://museui.github.io/)
+    - [Vue,Node管理系统界面](https://github.com/ericjjj/vms)
+    - [vue2 admin / a management system template](https://github.com/PanJiaChen/vue-element-admin)
+    - [全新的 WDUI，助力移动开发](https://wdfe.github.io/wdui/#/)
+    - [手摸手，带你用 vue 撸后台 系列一](https://juejin.im/post/59097cd7a22b9d0065fb61d2)
+    - [一只基于Vue2.x的移动端&微信UI - YDUI Touch](http://vue.ydui.org/)
 
 - 表格
     - [ZEE大神作品 - vue-editable](https://github.com/jinzhe/vue-editable)
@@ -108,6 +115,7 @@
     - [ZEE大神作品 - vue-calendar](https://github.com/jinzhe/vue-calendar)
     - [Awe - 日历组件](https://github.com/hilongjw/vue-datepicker)
     - [jas0ncn - 日历组件](https://github.com/jas0ncn/vue-timepicker)
+    - [基于Vue.2x 的日期选择组件](https://github.com/watson-yan/vue-datepicker)
 - 进度条
     - [vue 进度条](https://github.com/greyby/vue-spinner)
 - 验证

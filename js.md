@@ -175,6 +175,117 @@ function isWechat() {
     return /micromessenger/i.test(ua) || /windows phone/i.test(ua);
 }
 ```
+- 获取单个dom元素
+```js
+function $(selector, el) {
+  if (!el) {
+    el = document;
+  }
+  return el.querySelector(selector);
+}
+```
+- 获取多个dom元素
+```js
+function $$(selector, el) {
+  if (!el) {
+    el = document;
+  }
+  return el.querySelectorAll(selector);
+  // Note: the returned object is a NodeList.
+  // If you'd like to convert it to a Array for convenience, use this instead:
+  // return Array.prototype.slice.call(el.querySelectorAll(selector));
+}
+```
+- 将nodeList集合转换为数组
+```js
+function convertToArray(nodeList) {
+  var array = null
+  try {
+    // IE8-NodeList是COM对象
+    array = Array.prototype.slice.call(nodeList, 0)
+  } catch (err) {
+    array = []
+    for (var i = 0, len = nodeList.length; i < len; i++) {
+      array.push(nodeList[i])
+    }
+  }
+  return array
+}
+```
+- ajax函数
+```js
+function ajax(setting) {
+  //设置参数的初始值
+  var opts = {
+    method: (setting.method || "GET").toUpperCase(), //请求方式
+    url: setting.url || "", // 请求地址
+    async: setting.async || true, // 是否异步
+    dataType: setting.dataType || "json", // 解析方式
+    data: setting.data || "", // 参数
+    success: setting.success || function () { }, // 请求成功回调
+    error: setting.error || function () { } // 请求失败回调
+  };
+
+  // 参数格式化
+  function params_format(obj) {
+    var str = "";
+    for (var i in obj) {
+      str += i + "=" + obj[i] + "&";
+    }
+    return str
+      .split("")
+      .slice(0, -1)
+      .join("");
+  }
+
+  // 创建ajax对象
+  var xhr = new XMLHttpRequest();
+
+  // 连接服务器open(方法GET/POST，请求地址， 异步传输)
+  if (opts.method == "GET") {
+    xhr.open(
+      opts.method,
+      opts.url + "?" + params_format(opts.data),
+      opts.async
+    );
+    xhr.send();
+  } else {
+    xhr.open(opts.method, opts.url, opts.async);
+    xhr.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
+    xhr.send(opts.data);
+  }
+
+  /*
+  ** 每当readyState改变时，就会触发onreadystatechange事件
+  ** readyState属性存储有XMLHttpRequest的状态信息
+  ** 0 ：请求未初始化
+  ** 1 ：服务器连接已建立
+  ** 2 ：请求已接受
+  ** 3 : 请求处理中
+  ** 4 ：请求已完成，且相应就绪
+  */
+  xhr.onreadystatechange = function () {
+    if (xhr.readyState === 4 && (xhr.status === 200 || xhr.status === 304)) {
+      switch (opts.dataType) {
+        case "json":
+          var json = JSON.parse(xhr.responseText);
+          opts.success(json);
+          break;
+        case "xml":
+          opts.success(xhr.responseXML);
+          break;
+        default:
+          opts.success(xhr.responseText);
+          break;
+      }
+    }
+  };
+
+  xhr.onerror = function (err) {
+    opts.error(err);
+  };
+}
+```
 
 - JS接口安全域名不填写，分享onMenuShareAppMessage直接会取默认值。
 ```javascript
@@ -379,6 +490,20 @@ function getJsDir (src) {
     return script ? script.src.substr(0, script.src.lastIndexOf('/')) : script;
 }
 ```
+- 页面加载自执行函数
+```js
+function addload(func) {
+  var old = window.onload;
+  if (typeof window.onload != "function") {
+    window.onload = func;
+  } else {
+    window.onload = function () {
+      old();
+      func();
+    }
+  }
+}
+```
 
 - 从全局捕获错误
 ```js
@@ -504,6 +629,13 @@ function isDigit(value) {
     }
 }
 ```
+- 判断具体类型	
+```js
+function getType(a) {
+    var typeArray = Object.prototype.toString.call(a).split(" ");
+    return typeArray[1].slice(0, -1);
+}
+```
 - 设置cookie值
 ```js
 function setCookie(name, value, Hours) {
@@ -599,6 +731,26 @@ function appendscript(src, text, reload, charset) {
         }
         document.getElementsByTagName('head')[0].appendChild(scriptNode);
     } catch(e) {}
+}
+```
+- 动态加载js或css文件
+```js
+function delay_js(url) {
+  var type = url.split(".")
+    , file = type[type.length - 1];
+  if (file == "css") {
+    var obj = document.createElement("link")
+      , lnk = "href"
+      , tp = "text/css";
+    obj.setAttribute("rel", "stylesheet");
+  } else
+    var obj = document.createElement("script")
+      , lnk = "src"
+      , tp = "text/javascript";
+  obj.setAttribute(lnk, url);
+  obj.setAttribute("type", tp);
+  file == "css" ? document.getElementsByTagName("head")[0].appendChild(obj) : document.body.appendChild(obj);
+  return obj;
 }
 ```
 - 返回按ID检索的元素对象
@@ -746,6 +898,23 @@ String.prototype.unique=function(){
     return y
 };
 ```
+- 删除数组中某个元素
+```js
+Array.prototype.remove = function (val) {
+  var index = this.indexOf(val);
+  if (index > -1) {
+    this.splice(index, 1);
+  }
+};
+```
+
+- 判断数组里是否有某个元素
+```js
+ Array.prototype.isContains = function (e) {
+  for (i = 0; i < this.length && this[i] != e; i++);
+  return !(i == this.length);
+}
+```
 - 按字典顺序，对每行进行数组排序
 ```js
 function SetSort(){
@@ -771,7 +940,7 @@ function transform(tranvalue) {
         var dw = new Array("零", "壹", "贰", "叁", "肆", "伍", "陆", "柒", "捌", "玖"); //整数部分用
         //以下是小写转换成大写显示在合计大写的文本框中     
         //分离整数与小数
-        var source = splits(tranvalue);
+        var source = tranvalue.split(".");
         var num = source[0];
         var dig = source[1];
         //转换整数部分
@@ -828,13 +997,28 @@ function transform(tranvalue) {
     }
     return str;
 }
-//拆分整数与小数
-function splits(tranvalue) {
-    var value = new Array('', '');
-    temp = tranvalue.split(".");
-    for (var i = 0; i < temp.length; i++) {
-        value = temp;
-    }
-    return value;
+```
+- 格式化数字
+```js
+function fmoney(s, n) {
+  //s:传入的float数字 ，n:希望返回小数点几位
+  n = n > 0 && n <= 20 ? n : 2;
+  s = parseFloat((s + "").replace(/[^\d\.-]/g, "")).toFixed(n) + "";
+  var l = s
+    .split(".")[0]
+    .split("")
+    .reverse(),
+    r = s.split(".")[1];
+  t = "";
+  for (i = 0; i < l.length; i++) {
+    t += l[i] + ((i + 1) % 3 == 0 && i + 1 != l.length ? "," : "");
+  }
+  return;
+  t
+    .split("")
+    .reverse()
+    .join("") +
+    "." +
+    r;
 }
 ```

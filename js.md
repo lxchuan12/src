@@ -17,6 +17,75 @@ Math.random()*(n-m)+m
 // 停止callback function的执行并且立即return回来
 ```
 
+- 复制文本到剪切板
+```javascript
+function copyToClipboard(data) {
+    const _tempInput = document.createElement('input')
+    _tempInput.value = data.value
+    document.body.appendChild(_tempInput)
+    _tempInput.select()
+    document.execCommand('Copy')
+    document.body.removeChild(_tempInput)
+}
+```
+
+- 前端生成文件并下载
+```javascript
+function createAndDownloadFile(fileName, content) {
+    const aTag = document.createElement('a');
+    const blob = new Blob([content]);
+    aTag.download = `${fileName}.json`;
+    aTag.href = URL.createObjectURL(blob);
+    aTag.click();
+    URL.revokeObjectURL(blob);
+}
+```
+
+- 高亮文本
+```javascript
+function highlight(text, words, tag='span') {
+    let i, len = words.length, re;
+    for (i = 0; i < len; i++) {
+	re = new RegExp(words[i], 'g');
+	if (re.test(text)) {
+	    text = text.replace(re, '<'+ tag +' class="highlight">$&</'+ tag +'>');
+	}
+    }
+    return text;
+}
+
+```
+
+- 限制文本字数
+```javascript
+function excerpt(str, nwords) {
+    let words = str.split(' ');
+    words.splice(nwords, words.length-1);
+    return words.join(' ') +
+	(words.length !== str.split(' ').length ? '…' : '');
+}
+```
+
+- 简单创建动态菜单下拉列表
+```javascript
+function createMenu(items, tags=['ul', 'li']) {
+    const parent = tags[0];
+    const child = tags[1];
+    let item, value = '';
+    for (let i = 0, l = items.length; i < l; i++) {
+	item = items[i];
+	if (/:/.test(item)) {
+	    item = items[i].split(':')[0];
+	    value = items[i].split(':')[1];
+	}
+	items[i] = '<'+ child +' '+
+	    (value && 'value="'+value+'"') +'>'+ 
+	    item +'</'+ child +'>';
+    }
+    return '<'+ parent +'>'+ items.join('') +'</'+ parent +'>';
+}
+```
+
 - 防止被Iframe嵌套
 ```javascript
 if(top != self){
@@ -618,6 +687,33 @@ Date.prototype.Format = function(formatStr) {
     return str
 }
 ```
+
+- 判断日期是否有效
+```javascript
+function isValidDate(value, userFormat='mm/dd/yyyy') {
+    const delimiter = /[^mdy]/.exec(userFormat)[0];
+    const theFormat = userFormat.split(delimiter);
+    const theDate = value.split(delimiter);
+    function isDate(date, format) {
+	let m, d, y, i = 0, len = format.length, f;
+	for (i; i < len; i++) {
+	    f = format[i];
+	    if (/m/.test(f)) m = date[i];
+	    if (/d/.test(f)) d = date[i];
+	    if (/y/.test(f)) y = date[i];
+	}
+	return (
+	    m > 0 && m < 13 &&
+	    y && y.length === 4 &&
+	    d > 0 &&
+	    d <= (new Date(y, m, 0)).getDate()
+	);
+    }
+
+    return isDate(theDate, theFormat);
+}
+```
+
 - 判断是否为数字类型	
 ```js
 function isDigit(value) {

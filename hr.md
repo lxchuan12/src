@@ -3,8 +3,10 @@
 标签（空格分隔）： group
 
 ---
-群规
+## 群规
+
 [GITHUB在线地址](http://t.cn/RL2NtqX) `http://t.cn/RL2NtqX`
+
 [看云在线地址](http://t.cn/RUdaGHn) `http://t.cn/RUdaGHn`
 
 ![联盟群](http://box.kancloud.cn/2016-01-21_56a04aa7296c5.jpg)

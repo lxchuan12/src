@@ -213,37 +213,102 @@
     
 ----------
 
-- call:demo    
+- call:template
+
+    - http://garann.github.io/template-chooser/
+    template-chooser
+    - https://github.com/aui/artTemplate
+    artTemplate
+    - https://github.com/aui/tmodjs/blob/master/README.md
+    tomdjs
+    - http://juicer.name/docs/docs_zh_cn.html
+    淘宝模板juicer模板
+    - http://koen301.github.io/fxtpl/
+    Fxtpl v1.0 繁星前端模板引擎
+    - http://sentsin.com/layui/laytpl
+    laytpl
+    - https://github.com/mozilla/nunjucks
+    mozilla - nunjucks
+    - http://akdubya.github.io/dustjs/
+    dustjs
+    - http://ecomfe.github.io/etpl/
+    etpl
+    - http://twitter.github.io/hogan.js/
+    twitter-tpl
+
+----------
+
+- call:dialog
+
+    - https://github.com/aui/artDialog
+    artDialog 最新版
+    - http://aui.github.io/artDialog/doc/index.html
+    artDialog 文档
+    - https://code.google.com/p/artdialog/downloads/list
+    google code 下载地址
+    - http://sentsin.com/jquery/layer/
+    贤心弹出层
+    - https://github.com/bh-lay/UI
+    响应式用户交互组件库
+    - http://t4t5.github.io/sweetalert/
+    sweetalert-有css3动画弹出层
+    - http://bootboxjs.com/examples.html 
+    - https://nakupanda.github.io/bootstrap3-dialog/
+
+----------
+
+- call:css    
+css群：578901836
+
+    - http://tympanus.net/codrops/css_reference/
+    CSS 语法参考
+    - http://isux.tencent.com/css3/index.html
+    CSS3动画手册
+    - http://caniuse.com/
+    css兼容性查询
+    - http://css3lib.alloyteam.com/
+    alloyteam - CSS3 UI 库
+    - http://isux.tencent.com/css3/tools.html
+    腾讯css3动画制作工具
+    - http://linxz.github.io/tianyizone/
+    志爷css小工具集合
+    - http://www.note12.com/category/blog/2014-6-5/538fe0a9f786f1b7019a4dfb
+    css3 js 移动大杂烩
+    - http://bouncejs.com/
+    bouncejs 触摸库
+    - http://fian.my.id/Waves/
+    css3 按钮动画
+    - http://daneden.github.io/animate.css/
+    animate.css
+    - http://www.alloyteam.com/2015/10/8536/
+    全局CSS的终结(狗带) [译]
+    - http://www.w3cplus.com/blog/tags/29.html
+    ANIMATION - 大漠
+    - http://www.haorooms.com/tools/css_selecter/
+    css选择器
     
 ----------
 
-- call:demo    
+- call:react
+react-1群：530415177
+
+    - https://github.com/enaqx/awesome-react
+    react海量资源
+    - http://www.react-china.org/
+    react.js 中文论坛
+    - https://facebook.github.io/react/index.html
+    react.js 官方网址
+    - https://facebook.github.io/react/docs/getting-started.html
+    react.js 官方文档
+    - http://material-ui.com/#/
+    react.js material UI
+    - http://touchstonejs.io/
+    react.js TouchstoneJS UI
+    - http://amazeui.org/react/
+    react.js amazeui UI
+    - http://ant.design/
+    ant.design
     
 ----------
 
-- call:demo    
-    
-----------
-
-- call:demo    
-    
-----------
-
-- call:demo    
-    
-----------
-
-- call:demo    
-    
-----------
-
-- call:demo    
-    
-----------
-
-- call:demo    
-    
-----------
-
-- call:demo    
     

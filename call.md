@@ -290,9 +290,8 @@ css群：578901836
     
 ----------
 
-- call:react
+- call:react   
 react-1群：530415177
-
     - https://github.com/enaqx/awesome-react
     react海量资源
     - http://www.react-china.org/
@@ -313,7 +312,7 @@ react-1群：530415177
 ----------
 
 
-- call:react-admin
+- call:react-admin  
 react-1群：530415177
 
     - https://github.com/huzzbuzz/bear-admin
@@ -335,7 +334,7 @@ react-1群：530415177
     
 ----------
 
-- call:vue-admin
+- call:vue-admin  
 vue-1群：364912432
 
     - https://github.com/taylorchen709/vue-admin

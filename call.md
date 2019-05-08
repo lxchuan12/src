@@ -337,12 +337,11 @@ react-1群：530415177
 - call:vue  
 vue-1群：364912432
 
-    [群内禁发：](http://www.kancloud.cn/jikeytang/qq/81132)
-    [群内资料：](http://t.cn/RGE7EXW)
-    [Vuejs群资料：](http://t.cn/Rb1aUQT)
-    [官网：](http://cn.vuejs.org/guide/)
-    [论坛：](http://forum.vuejs.org/)
-    [新版群规：](http://t.cn/RUdaGHn)
+    - [群内禁发](http://www.kancloud.cn/jikeytang/qq/81132)
+    - [Vuejs群资料](http://t.cn/Rb1aUQT)
+    - [官网](http://cn.vuejs.org/guide/)
+    - [论坛](http://forum.vuejs.org/)
+    - [新版群规](http://t.cn/RUdaGHn)
     
     - http://i.youku.com/u/UMzQxOTE4MDE5Mg==
     小凡哥Vuejs视频

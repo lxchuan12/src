@@ -334,6 +334,43 @@ react-1群：530415177
     
 ----------
 
+- call:vue  
+vue-1群：364912432
+
+    [群内禁发：](http://www.kancloud.cn/jikeytang/qq/81132)
+    [群内资料：](http://t.cn/RGE7EXW)
+    [Vuejs群资料：](http://t.cn/Rb1aUQT)
+    [官网：](http://cn.vuejs.org/guide/)
+    [论坛：](http://forum.vuejs.org/)
+    [新版群规：](http://t.cn/RUdaGHn)
+    
+    - http://i.youku.com/u/UMzQxOTE4MDE5Mg==
+    小凡哥Vuejs视频
+    - https://github.com/bhnddowinf/vuejs-learn
+    讲解 vue.js 实例
+    - http://t.cn/Ri90k28
+    Vue开源项目库
+    
+    vue2.0相关文档
+    - http://vuefe.cn/ 
+    中文文档
+    - http://vuejs.org/guide/ 
+    官网原文文档
+    - http://router.vuejs.org/zh-cn/index.html 
+    vue-router2.0中文文档
+    - http://vuex.vuejs.org/en/index.html 
+    vuex2.0 英文文档
+    - https://github.com/bhnddowinf/vuejs2-learn 
+    v2学习项目
+    - https://github.com/opendigg/awesome-github-vue
+    vue的组件以及demo全集
+    - https://github.com/vuejs/awesome-vue
+    vuejs 英文资料
+    - https://github.com/Pines-Cheng/awesome-vue-cn
+    vuejs 中文资料
+    
+----------
+
 - call:vue-admin  
 vue-1群：364912432
 

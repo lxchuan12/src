@@ -312,4 +312,46 @@ react-1群：530415177
     
 ----------
 
+
+- call:react-admin
+react-1群：530415177
+
+    - https://github.com/huzzbuzz/bear-admin
+    一个简洁的 antd-react-admin 应用
+    - https://github.com/SuJunming/react-admin
+    React+AntD 后台管理系统解决方案
+    - https://github.com/MacKentoch/react-director-admin-template
+    ReactJS version of Director Responsive Admin Template Free
+    - https://github.com/creativetimofficial/light-bootstrap-dashboard-react
+    React version of Light Bootstrap Dashboard
+    - https://github.com/mrholek/CoreUI-React
+    CoreUI React is free React admin template based on Bootstrap 4 
+    - https://github.com/yezihaohao/react-admin
+    react 后台管理系统解决方案
+    - https://github.com/nelsonkuang/ant-admin
+    基于 antd 的后台管理平台, 在react中玩转D3.js
+    - https://github.com/lanux/react-admin
+    基于antd、redux-observable、redux-thunk、react-router响应式SPA脚手架
+    
+----------
+
+- call:vue-admin
+vue-1群：364912432
+
+    - https://github.com/taylorchen709/vue-admin
+    - https://github.com/lanux/Vue-Admin
+    - https://github.com/zzmhot/vue-admin
+    - https://github.com/lifetea/vue-admin
+    - https://github.com/xufei/vue-admin
+    - https://github.com/Moearly/Vue-admin
+    - https://github.com/mgbq/nx-admin
+    - https://github.com/herozhou/vue-framework-wz
+    - https://github.com/PanJiaChen/vue-element-admin
+    - https://github.com/d2-projects/d2-admin
+    - https://github.com/topfullstack/adminify
+    - https://github.com/iview/iview-admin
+    - https://github.com/sendya/ant-design-pro-vue
+    - https://github.com/iczer/vue-antd-admin
+    
+----------
     

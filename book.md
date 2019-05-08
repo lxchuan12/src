@@ -11,8 +11,7 @@
 - [锋利的jQuery（第2版）](http://item.jd.com/11019625.html)
 - [JavaScript设计模式
 百度前端专家力作，阿里巴巴、百度前端高级工程师鼎力推荐的、极具趣味，容易理解，讲解又极为严谨和透彻的写作风格帮你打造出更为专业的Web产品的好书](http://item.jd.com/11747684.html)
-- [JavaScript设计模式与开发实践
-腾讯前端Alloy Team团队出品，资深前端架构师曾探力作](http://item.jd.com/1557415034.html)
+<!-- - [JavaScript设计模式与开发实践腾讯前端Alloy Team团队出品，资深前端架构师曾探力作](http://item.jd.com/1557415034.html) -->
 - [JavaScript面向对象精要](http://item.jd.com/11667775.html)
 - [JavaScript面向对象编程指南（第2版）](http://item.jd.com/11642532.html)
 - [编写高质量代码：改善JavaScript程序的188个建议](http://item.jd.com/11123174.html)
